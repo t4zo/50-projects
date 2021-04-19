@@ -1,4 +1,4 @@
-export default function vanillaJs() {
+export default function vanilaJs() {
   const progress = document.querySelector('#ps-progress');
   const prev = document.querySelector('#ps-prev');
   const next = document.querySelector('#ps-next');

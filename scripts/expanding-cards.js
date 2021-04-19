@@ -1,4 +1,4 @@
-export default function vanillaJs() {
+export default function vanilaJs() {
   const panels = document.querySelectorAll('.ec-panel');
 
   panels.forEach((panel) => {

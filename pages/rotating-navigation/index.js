@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Layout from '../../components/Layout';
-import vanillaJs from './vanillaJs';
+import vanillaJs from '../../scripts/rotating-navigation';
 
 export default function RotatingNavigationPage() {
   useEffect(() => {

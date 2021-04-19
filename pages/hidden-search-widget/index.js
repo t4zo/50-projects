@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Layout from '../../components/Layout';
-import vanillaJs from './vanillaJs';
+import vanillaJs from '../../scripts/hidden-search-widget';
 
 export default function HiddenSearchWidget() {
   useEffect(() => {
