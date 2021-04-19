@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+.ec-main {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#ec-explore-the-world {
+  background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+#ec-wild-forest {
+  background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+#ec-sunny-beach {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+}
+
+#ec-city-on-winter {
+  background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+}
+
+#ec-mountains-clouds {
+  background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.ec-container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 90vw;
+
+  .ec-panel {
+    border-radius: 50px;
+    position: relative;
+    /* background-size: auto 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 0 10px;
+    transition: flex 0.7s ease-in;
+
+    h3 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      opacity: 0;
+    }
+
+    &.ec-active {
+      flex: 5;
+      font-size: 24px;
+
+      h3 {
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .ec-container {
+    width: 100vw;
+  }
+
+  .ec-panel:nth-of-type(4),
+  .ec-panel:nth-of-type(5) {
+    display: none;
+  }
+}

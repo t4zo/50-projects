@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root {
+  --line-border-empty: #e0e0e0;
+  --line-border-fill: #3498db;
+}
+
+.ps-main {
+  background-color: #f6f7fb;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ps-container {
+  text-align: center;
+
+  .ps-progress-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px !important;
+    max-width: 100%;
+    width: 350px;
+    margin: auto;
+
+    &::before {
+      content: '';
+      background-color: var(--line-border-empty);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      transform: translateY(-50%);
+      z-index: -2;
+    }
+
+    .ps-progress {
+      background-color: var(--line-border-fill);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      transform: translateY(-50%);
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+
+    .ps-circle {
+      background-color: white;
+      color: #999;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid var(--line-border-empty);
+      transition: 0.4s ease;
+
+      &.ps-active {
+        border-color: var(--line-border-fill);
+      }
+    }
+  }
+}
+
+.ps-btn {
+  background-color: var(--line-border-fill);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+  }
+}
