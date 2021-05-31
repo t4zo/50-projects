@@ -3,46 +3,65 @@ import styles from '../styles/Home.module.css';
 
 export default function HomePage() {
   return (
-    <Layout title='Create Next App'>
+    <Layout title='50 Projects'>
       <div className={styles.container}>
         <main className={styles.main}>
           <h1 className={styles.title}>
-            Welcome to <a href='https://nextjs.org'>Next.js!</a>
+            50 small front end projects | <a href='https://github.com/t4zo/50-projects'>Github</a>
           </h1>
 
-          <p className={styles.description}>
-            Get started by editing <code className={styles.code}>pages/index.js</code>
-          </p>
+          <p className={styles.description}>Choose one project</p>
 
           <div className={styles.grid}>
-            <a href='https://nextjs.org/docs' className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
+            <a href='/expanding-cards' target='_blank' className={styles.card}>
+              <h3>1. Expanding Cards &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             </a>
 
-            <a href='https://nextjs.org/learn' className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <a href='/progress-steps' target='_blank' className={styles.card}>
+              <h3>2. Progress Steps &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             </a>
 
-            <a href='https://github.com/vercel/next.js/tree/master/examples' className={styles.card}>
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <a href='/rotating-navigation' target='_blank' className={styles.card}>
+              <h3>3. Rotating Navigation &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             </a>
 
-            <a href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app' className={styles.card}>
-              <h3>Deploy &rarr;</h3>
-              <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
+            <a href='/hidden-search-widget' target='_blank' className={styles.card}>
+              <h3>4. Hidden Search Widget &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             </a>
+
+            {/* <a href='/expanding-cards' target='_blank' className={styles.card}>
+              <h3>5. Expanding Cards &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </a>
+
+            <a href='/progress-steps' target='_blank' className={styles.card}>
+              <h3>6. Progress Steps &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </a>
+
+            <a href='/rotating-navigation' target='_blank' className={styles.card}>
+              <h3>7. Rotating Navigation &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </a>
+
+            <a href='/hidden-search-widget' target='_blank' className={styles.card}>
+              <h3>8. Hidden Search Widget &rarr;</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+            </a> */}
           </div>
         </main>
 
         <footer className={styles.footer}>
           <a
-            href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+            class={styles.card}
+            href='https://github.com/t4zo'
             target='_blank'
             rel='noopener noreferrer'>
-            Powered by <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
+            Tácio de Souza Campos
           </a>
         </footer>
       </div>
